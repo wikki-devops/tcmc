@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://localhost/tcmc/ta/';
-$config['base_url'] = 'https://godparticles.us/demo/tcmc/ta/';
+$config['base_url'] = 'https://www.godparticles.us/demo/tcmc/ta/';
 
 /*
 |--------------------------------------------------------------------------
