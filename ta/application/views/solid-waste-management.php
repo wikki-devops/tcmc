@@ -1,0 +1,85 @@
+<?php $this->load->view('widgets/page-title'); ?>
+
+<section class="pt-60px pb-60px contain-background background-no-repeat background-position-right"
+    style="background-image: url(<?= cdn_url(); ?>assets/images/bg/officer-details-bg.png);background-size:200px">
+    <div class="container">
+        <div class="row">
+            <table class="w-100 overflow-hidden border-radius-20px">
+                <thead>
+                    <tr>
+                        <th class="text-nowrap">வ.எண்</th>
+                        <th>மண்டலம்</th>
+                        <th>வீட்டு வசதி</th>
+                        <th>மக்கள் தொகை</th>
+                        <th>தற்போதைய மைக்ரோ உரக் கூடம்</th>
+                        <th>தற்போதைய சமுதாய கழிப்பிடம்</th>
+                        <th>தற்போதைய பொது கழிப்பிடம்</th>
+                        <th>தற்போதைய சிறுநீர் கழிப்பிடம்</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($swm_2 as $variable): ?>
+                        <tr>
+                            <td><?= $variable['id']; ?></td>
+                            <td><?= $variable['zone']; ?></td>
+                            <td><?= $variable['house_hold']; ?></td>
+                            <td><?= $variable['population']; ?></td>
+                            <td><?= $variable['existing_mcc']; ?></td>
+                            <td><?= $variable['existing_ct']; ?></td>
+                            <td><?= $variable['existing_pt']; ?></td>
+                            <td><?= $variable['existing_urinal']; ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="pt-60px pb-60px contain-background background-no-repeat background-position-right"
+    style="background-image: url(<?= cdn_url(); ?>assets/images/bg/officer-details-bg.png);background-size:200px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 colm-md-6">
+                <table class="w-100 overflow-hidden border-radius-20px">
+                    <thead>
+                        <tr>
+                            <th class="text-nowrap">வ.எண்</th>
+                            <th>பெயர்</th>
+                            <th>மதிப்பு</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($waste as $generation): ?>
+                            <tr>
+                                <td><?= $generation['id']; ?></td>
+                                <td><?= $generation['name']; ?></td>
+                                <td><?= $generation['value']; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 colm-md-6">
+                <table class="w-100 overflow-hidden border-radius-20px">
+                    <thead>
+                        <tr>
+                            <th class="text-nowrap">வ.எண்</th>
+                            <th>பெயர்</th>
+                            <th>மதிப்பு</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($swm as $variable): ?>
+                            <tr>
+                                <td><?= $variable['id']; ?></td>
+                                <td><?= $variable['name']; ?></td>
+                                <td><?= $variable['value']; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,4 @@
+[20-Mar-2025 08:00:17 UTC] PHP Fatal error:  Uncaught Error: Class "Mock_Database_DB_Driver" not found in /home/h67ear5uus2x/public_html/demo/tambaramcorporation/en/tests/mocks/database/drivers/sqlite.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/h67ear5uus2x/public_html/demo/tambaramcorporation/en/tests/mocks/database/drivers/sqlite.php on line 3
